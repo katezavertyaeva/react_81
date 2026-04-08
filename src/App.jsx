@@ -5,7 +5,8 @@ import "./App.css";
 import Button from "./components/Button/Button";
 
 // Импорты лекций
-import Lesson02 from "./lessons/Lesson02/Lesson02";
+// import Lesson02 from "./lessons/Lesson02/Lesson02";
+import Lesson04 from "./lessons/Lesson04/Lesson04";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       <Button /> */}
 
       {/* Лекция 2. Components */}
-      <Lesson02 />
+      {/* <Lesson02 /> */}
+
+      {/* Lesson 4. State */}
+      <Lesson04 />
     </div>
   );
 }

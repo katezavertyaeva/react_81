@@ -1,13 +1,17 @@
 // Упрощенный импорт для стилей
 import "./styles.css";
 
-function Button() {
+function Button({ name, type = "button", onButtonClick}) {
   // Вся дополнительная логика (создание переменных, выражения, функции и т.д.)
   // прописывается внутри тела компонента ДО return
-  const isMainName = false;
-  const buttonName = isMainName ? "Main Button" : "Button";
+  // const isMainName = false;
+  // const buttonName = isMainName ? "Main Button" : "Button";
 
-  return <button className="my-button">{buttonName}</button>;
+  return (
+    <button className="my-button" type={type} onClick={onButtonClick}>
+      {name}
+    </button>
+  );
 }
 
 // Чтобы мы могли использовать компонент (вызвать) в других компонентах
